@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "build": "echo \"No build process defined in the repository.\"",
+    "test": "cd backend && cargo test && cd ../frontend && npm test",
+    "launch": "cd backend && cargo run & cd ../frontend && npm run dev"
+  }
+}
