@@ -8,6 +8,15 @@ struct Timer {
     remaining: u64,
 }
 
+impl Timer {
+    fn clone(&self) -> Timer {
+        Timer {
+            duration: self.duration,
+            remaining: self.remaining,
+        }
+    }
+}
+
 struct AppState {
     timer: Mutex<Timer>,
 }
